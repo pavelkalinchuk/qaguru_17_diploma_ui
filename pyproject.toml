@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "qaguru_17_diploma_ui"
+version = "0.1.0"
+description = "UI testing for luma internet-shop"
+authors = ["pavelkalinchuk <715m4s@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+requests = "^2.32.3"
+pytest = "^8.3.4"
+selene = "^2.0.0rc9"
+allure-pytest = "^2.13.5"
+python-dotenv = "^1.0.1"
+
+[tool.pytest.ini_options]
+addopts = "--alluredir=allure-results --clean-alluredir"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
