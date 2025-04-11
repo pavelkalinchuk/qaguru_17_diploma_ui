@@ -11,6 +11,10 @@ product_page = ProductPage()
 cart = Cart()
 
 
+@allure.tag('web')
+@allure.title('Покупка мужской одежды')
+@allure.description('Тестирование покупки мужского худи')
+@allure.link('https://magento.softwaretestingboard.com/', name="Главная страница магазина")
 def test_buying_hoodies():
     with allure.step('Открываем домашнюю страницу магазина'):
         home_page.accept_permission_to_process_data().click()

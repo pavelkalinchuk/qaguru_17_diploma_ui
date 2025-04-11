@@ -1,4 +1,3 @@
-from selene import be, have, by
 from selene.support.shared import browser
 
 from pages.home_page import HomePage
@@ -7,7 +6,7 @@ from pages.home_page import HomePage
 class ManPage(HomePage):
 
     def open_page(self):
-        self.men_page().click()
+        self.open_men_page().click()
 
     def hoodies_and_sweatshirts(self):
         base_url = self.get_base_url()

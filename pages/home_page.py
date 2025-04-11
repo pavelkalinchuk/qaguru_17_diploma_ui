@@ -1,5 +1,5 @@
 from selene.support.shared import browser
-from selene import be
+from selene import be, by
 
 
 class HomePage:
@@ -13,6 +13,12 @@ class HomePage:
         return agree
 
     @staticmethod
-    def men_page():
+    def open_men_page():
         page = browser.element('//span[text()="Men"]')
         return page
+
+    @staticmethod
+    def link_for_create_new_account():
+        create_account = browser.element(by.link_text("Create an Account"))
+        return create_account
+

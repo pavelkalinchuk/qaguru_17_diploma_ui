@@ -277,6 +277,21 @@ files = [
 test = ["pytest (>=6)"]
 
 [[package]]
+name = "faker"
+version = "37.1.0"
+description = "Faker is a Python package that generates fake data for you."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "faker-37.1.0-py3-none-any.whl", hash = "sha256:dc2f730be71cb770e9c715b13374d80dbcee879675121ab51f9683d262ae9a1c"},
+    {file = "faker-37.1.0.tar.gz", hash = "sha256:ad9dc66a3b84888b837ca729e85299a96b58fdaef0323ed0baace93c9614af06"},
+]
+
+[package.dependencies]
+tzdata = "*"
+
+[[package]]
 name = "future"
 version = "1.0.0"
 description = "Clean single-source support for Python 3 and 2"
@@ -612,6 +627,18 @@ files = [
 ]
 
 [[package]]
+name = "tzdata"
+version = "2025.2"
+description = "Provider of IANA time zone data"
+optional = false
+python-versions = ">=2"
+groups = ["main"]
+files = [
+    {file = "tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8"},
+    {file = "tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9"},
+]
+
+[[package]]
 name = "urllib3"
 version = "2.2.3"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -666,5 +693,5 @@ h11 = ">=0.9.0,<1"
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.8,<4.0"
-content-hash = "d08cfd4b6024f4b90a38c97523d9d8caf735e30e18c7f6e05c4722a48e9379d5"
+python-versions = ">=3.9,<4.0"
+content-hash = "04263ba12eb49f6bf5cc92700d71d24c7feffd71233f7b22a84ead2a3c6b92eb"

@@ -6,13 +6,14 @@ authors = ["pavelkalinchuk <715m4s@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.9,<4.0"
 
 requests = "^2.32.3"
 pytest = "^8.3.4"
 selene = "^2.0.0rc9"
 allure-pytest = "^2.13.5"
 python-dotenv = "^1.0.1"
+faker = "^37.1.0"
 
 [tool.pytest.ini_options]
 addopts = "--alluredir=allure-results --clean-alluredir"
