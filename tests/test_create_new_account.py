@@ -20,7 +20,7 @@ project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 def load_user_data(file_path):
     with open(file_path, 'r') as file:
-        return json.load(file)[0]  # Загружаем первого пользователя из файла
+        return json.load(file)[-1]  # Загружаем последнего пользователя из файла
 
 
 @allure.tag('web')

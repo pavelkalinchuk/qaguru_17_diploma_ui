@@ -19,6 +19,15 @@ class HomePage:
 
     @staticmethod
     def link_for_create_new_account():
-        create_account = browser.element(by.link_text("Create an Account"))
-        return create_account
+        create_account_link = browser.element(by.link_text("Create an Account"))
+        return create_account_link
 
+    @staticmethod
+    def link_for_authorization():
+        sing_in_link = browser.element(by.link_text("Sign In"))
+        return sing_in_link
+
+    @staticmethod
+    def user_is_authorized():
+        user_is_authorized = browser.element('.logged-in')
+        return user_is_authorized

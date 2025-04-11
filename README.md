@@ -1,8 +1,6 @@
-# Домашняя работа к уроку "14. Учимся быстро разрабатывать готовые проекты для тестовых заданий. Васенков Станислав"
-
+# Дипломный проект (UI)
 [Ссылка на репозиторий](https://jenkins.autotests.cloud/job/teacher-iTerkin-qa_guru_python_8_full_project/)
 
-[Конспект лекций](https://github.com/qa-guru/knowledge-base/wiki#python)
 
 Доступы к сервисам
 
