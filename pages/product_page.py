@@ -31,7 +31,8 @@ class ProductPage(HomePage):
         color_mapping = {
             'Blue': '#option-label-color-93-item-50',
             'Green': '#option-label-color-93-item-53',
-            'Lavender': '#option-label-color-93-item-54'
+            'Lavender': '#option-label-color-93-item-54',
+            'Purple': '#option-label-color-93-item-57'
         }
         if color in color_mapping:
             color_element = browser.element(color_mapping[color])

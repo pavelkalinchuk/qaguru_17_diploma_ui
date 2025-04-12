@@ -3,6 +3,8 @@ import os
 
 from allure_attach import *
 
+from allure_attach import *
+
 from selene import browser, have, be
 
 from pages.home_page import HomePage
@@ -52,3 +54,11 @@ def test_create_new_account():
         home_page.user_is_authorized().should(be.visible)
         home_page.user_is_authorized().should(have.text(user_data["First Name"]))
         home_page.user_is_authorized().should(have.text(user_data["Last Name"]))
+        add_screenshot(browser)
+
+    with allure.step("Открываем список действий с пользователем"):
+        home_page.open_user_actions_list().click()
+
+    with allure.step("Кликаем на ссылке выхода из аккаунта"):
+        home_page.log_out_of_account_link().should(be.visible)
+        home_page.log_out_of_account_link().click()

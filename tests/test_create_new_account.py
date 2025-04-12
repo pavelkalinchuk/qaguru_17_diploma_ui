@@ -1,8 +1,6 @@
 import json
 import os
-import time
 
-import allure
 from allure_attach import *
 
 from selene import browser, have, be, by
