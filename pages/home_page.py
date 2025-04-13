@@ -13,14 +13,19 @@ class HomePage:
         return agree
 
     @staticmethod
+    def women_page():
+        woman_page_locator = browser.element('//span[text()="Women"]')
+        return woman_page_locator
+
+    @staticmethod
     def men_page():
         man_page_locator = browser.element('//span[text()="Men"]')
         return man_page_locator
 
     @staticmethod
-    def women_page():
-        woman_page_locator = browser.element('//span[text()="Women"]')
-        return woman_page_locator
+    def gear_page():
+        gear_page_locator = browser.element('//span[text()="Gear"]')
+        return gear_page_locator
 
     @staticmethod
     def link_for_create_new_account():

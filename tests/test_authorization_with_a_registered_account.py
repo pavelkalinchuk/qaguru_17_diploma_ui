@@ -1,9 +1,7 @@
 import json
 import os
 
-from allure_attach import *
-
-from allure_attach import *
+from utils.allure_attach import *
 
 from selene import browser, have, be
 

@@ -3,7 +3,7 @@ import os
 from selene import browser
 import pytest
 from selenium import webdriver
-from allure_attach import *
+from utils.allure_attach import *
 
 # Загрузка переменных окружения из файла .env
 load_dotenv()

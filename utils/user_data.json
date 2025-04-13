@@ -64,5 +64,23 @@
         "Last Name": "Thomas",
         "Email": "lauren62@example.net",
         "Password": "$Uq1Pmo!)0FG"
+    },
+    {
+        "First Name": "David",
+        "Last Name": "Robinson",
+        "Email": "ygaines@example.net",
+        "Password": "$*Zbb43vM9Zs"
+    },
+    {
+        "First Name": "Kristi",
+        "Last Name": "Young",
+        "Email": "alankelly@example.org",
+        "Password": "^%Xx_h_0X77p"
+    },
+    {
+        "First Name": "Christy",
+        "Last Name": "Calderon",
+        "Email": "qbush@example.org",
+        "Password": "Y+*9Unh%eig2"
     }
 ]
