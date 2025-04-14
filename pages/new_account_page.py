@@ -15,25 +15,25 @@ class NewAccountPage(HomePage):
 
     @staticmethod
     def last_name_field():
-        last_name = browser.element('#lastname')
-        return last_name
+        last_name_locator = browser.element('#lastname')
+        return last_name_locator
 
     @staticmethod
     def email_field():
-        email = browser.element('#email_address')
-        return email
+        email_locator = browser.element('#email_address')
+        return email_locator
 
     @staticmethod
     def password_field():
-        password = browser.element('#password')
-        return password
+        password_locator = browser.element('#password')
+        return password_locator
 
     @staticmethod
     def confirm_password_field():
-        confirm_password = browser.element('#password-confirmation')
-        return confirm_password
+        confirm_password_locator = browser.element('#password-confirmation')
+        return confirm_password_locator
 
     @staticmethod
     def button_for_create_account():
-        create_account_button = browser.element('button.action.submit.primary')
-        return create_account_button
+        create_account_button_locator = browser.element('button.action.submit.primary')
+        return create_account_button_locator

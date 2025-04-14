@@ -1,5 +1,6 @@
 from selene.support.shared import browser
 from selene import be, by
+from selenium.webdriver import ActionChains
 
 
 class HomePage:
@@ -18,14 +19,31 @@ class HomePage:
         return woman_page_locator
 
     @staticmethod
+    def list_of_categories_for_women(button, level):
+        (ActionChains(browser.driver)
+         .move_to_element(browser.element(f'//span[text()="{button}"]/..').locate())
+         .move_to_element(browser.element(f'//span[text()="{level}"]').locate())
+         .perform())
+
+    @staticmethod
     def men_page():
         man_page_locator = browser.element('//span[text()="Men"]')
         return man_page_locator
 
     @staticmethod
+    def list_of_categories_for_men():
+        list_locator = browser.element('.ui-menu-icon.ui-icon.ui-icon-carat-1-e')
+        return list_locator
+
+    @staticmethod
     def gear_page():
         gear_page_locator = browser.element('//span[text()="Gear"]')
         return gear_page_locator
+
+    @staticmethod
+    def training_page():
+        training_page_locator = browser.element('//span[text()="Training"]')
+        return training_page_locator
 
     @staticmethod
     def link_for_create_new_account():
@@ -49,5 +67,6 @@ class HomePage:
 
     @staticmethod
     def log_out_of_account_link():
-        log_out_link_locator = browser.element('//li[@class="authorization-link" and @data-label="or"]/a[contains(., "Sign Out")]')
+        log_out_link_locator = browser.element(
+            '//li[@class="authorization-link" and @data-label="or"]/a[contains(., "Sign Out")]')
         return log_out_link_locator

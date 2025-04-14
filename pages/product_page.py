@@ -43,12 +43,12 @@ class ProductPage(HomePage):
 
     @staticmethod
     def add_to_cart():
-        product_addtocart_button = browser.element('#product-addtocart-button')
-        return product_addtocart_button
+        product_addtocart_button_locator = browser.element('#product-addtocart-button')
+        return product_addtocart_button_locator
 
     @staticmethod
     def should_be_message_added_cart_product(product_name):
-        message = browser.element('div[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
-        message.should(be.visible)
-        message.should(have.text(f'You added {product_name} to your shopping cart.'))
-        return message
+        message_locator = browser.element('div[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
+        message_locator.should(be.visible)
+        message_locator.should(have.text(f'You added {product_name} to your shopping cart.'))
+        return message_locator

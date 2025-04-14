@@ -4,8 +4,8 @@ from selene import browser, have
 class Cart:
     @staticmethod
     def open_cart():
-        cart = browser.element('.action.showcart')
-        return cart
+        cart_locator = browser.element('.action.showcart')
+        return cart_locator
 
     @staticmethod
     def product_name(name):

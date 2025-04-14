@@ -11,5 +11,5 @@ class MenPage(HomePage):
     def hoodies_and_sweatshirts_for_men(self):
         base_url = self.get_base_url()
         section = 'hoodies-and-sweatshirts-men'
-        hoodies_and_sweatshirts = browser.element(f'.item a[href="{base_url}/men/tops-men/{section}.html"]')
-        return hoodies_and_sweatshirts
+        hoodies_and_sweatshirts_locator = browser.element(f'.item a[href="{base_url}/men/tops-men/{section}.html"]')
+        return hoodies_and_sweatshirts_locator

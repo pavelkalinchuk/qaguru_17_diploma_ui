@@ -8,10 +8,12 @@ from utils.allure_attach import *
 # Загрузка переменных окружения из файла .env
 load_dotenv()
 
+
 def pytest_addoption(parser):
     parser.addoption(
         "--selenoid", action="store_true", default=False, help="Run tests on Selenoid"
     )
+
 
 @pytest.fixture(scope="function", autouse=True)
 def setup_browser(request):
@@ -47,10 +49,9 @@ def setup_browser(request):
         browser.config.driver = webdriver.Chrome(options=driver_options)
 
     browser.config.base_url = 'https://magento.softwaretestingboard.com'
-    # browser.open('/')
 
     # Изменение масштаба страницы
-    browser.driver.execute_script("document.querySelector('body').style.transform='scale(0.65)';")
+    # browser.driver.execute_script("document.querySelector('body').style.transform='scale(0.65)';")
 
     yield browser
 
